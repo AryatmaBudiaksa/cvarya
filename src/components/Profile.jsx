@@ -1,4 +1,4 @@
-import { MapPin, Eye, ExternalLink } from "lucide-react";
+import * as Icons from "lucide-react";
 import profilJpeg from "../assets/Profil.jpg";
 
 const Chip = ({ children }) => (
@@ -45,8 +45,8 @@ const Profile = ({ profile }) => {
           </div>
 
           <div className="flex gap-4 text-sm text-gray-400 mb-3">
-            <Info icon={MapPin} label={profile.location} />
-            <Info icon={Eye} label="127 views" />
+            <Info icon={Icons.MapPin} label={profile.location} />
+            <Info icon={Icons.Eye} label="127 views" />
           </div>
 
           <p className="text-gray-300 text-sm leading-relaxed mb-4">
@@ -61,9 +61,8 @@ const Profile = ({ profile }) => {
               className="inline-flex items-center gap-2 
                 bg-[#00eaff]/20 text-[#00eaff] border border-[#00eaff]/40
                 px-4 py-2 rounded-lg hover:bg-[#00eaff]/30 transition
-                shadow-[0_0_10px_#00eaff80]"
-            >
-              <ExternalLink className="w-4 h-4" />
+                shadow-[0_0_10px_#00eaff80]">
+              <Icons.ExternalLink className="w-4 h-4" />
               Visit Portfolio
             </a>
           )}
